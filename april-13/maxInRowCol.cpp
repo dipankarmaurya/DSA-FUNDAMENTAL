@@ -19,9 +19,9 @@ void maxInRow(vector<vector<int>>&arr){
 void maxInCol(vector<vector<int>>&arr){
     int row=arr.size();
     int col=arr[0].size();
-        for(int j=0;j<row;j++){
+        for(int j=0;j<col;j++){
              int max=arr[0][j];
-            for(int k=0;k<col;k++){
+            for(int k=0;k<row;k++){
                 if(arr[k][j]>max)
                 max=arr[k][j];
             }
